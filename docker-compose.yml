@@ -1,14 +1,30 @@
-version: '3.8'
+# version: '3.8'
+
+# services:
+#   backend:
+#     build: ./backend
+#     container_name: backend
+#     ports:
+#       - "5000:5000"
+
+#   frontend:
+#     build: ./frontend
+#     container_name: frontend
+#     ports:
+#       - "80:80"
+#     depends_on:
+#       - backend
+
 
 services:
   backend:
-    build: ./backend
+    image: portfolio-backend
     container_name: backend
     ports:
       - "5000:5000"
 
   frontend:
-    build: ./frontend
+    image: portfolio-frontend
     container_name: frontend
     ports:
       - "80:80"
