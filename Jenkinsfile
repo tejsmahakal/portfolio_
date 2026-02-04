@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git 'https://github.com/tejsmahakal/portfolio_.git'
-            }
-        }
 
         stage('Build Images') {
             steps {
